@@ -37,6 +37,8 @@ public class Way2Sms {
 	  dw.selectByVisibleText("Independence Day");
 	  Thread.sleep(3000);
 	  driver.findElement(By.xpath(".//*[@id='smsGreetsPaging']/ol/li[6]")).click();
+	  
+	  // update soon
   }
   @AfterTest
   public void afterTest() {
