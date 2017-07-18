@@ -20,9 +20,9 @@ public class Way2Sms {
   {
 	  driver.get("http://site21.way2sms.com/entry?ec=0080&id=0.22633332955517949");
 	  Thread.sleep(3000);
-	  driver.findElement(By.name("username")).sendKeys("XXXXXXXXX");
+	  driver.findElement(By.name("username")).sendKeys("xxx");
 	  Thread.sleep(3000);
-	  driver.findElement(By.name("password")).sendKeys("XXXXX");
+	  driver.findElement(By.name("password")).sendKeys("xxx");
 	  Thread.sleep(3000);
 	  driver.findElement(By.id("loginBTN")).click();
 	  Thread.sleep(3000);
