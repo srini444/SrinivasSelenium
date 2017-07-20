@@ -18,6 +18,7 @@ import org.testng.annotations.AfterTest;
 public class HandleScreenshot 
 {
   WebDriver driver;
+  
   @BeforeTest
   public void beforeTest() 
   {

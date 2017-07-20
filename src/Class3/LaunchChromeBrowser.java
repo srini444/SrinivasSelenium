@@ -12,16 +12,17 @@ public class LaunchChromeBrowser
   @BeforeTest
   public void beforeTest() 
   {
-	  System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+	  //System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 	  WebDriver driver = new ChromeDriver();
-	  driver = new ChromeDriver();
+	  
 	  //driver = new FirefoxDriver();
   }
   @Test
   public void f() 
   {
+	  driver = new ChromeDriver();
 	  driver.get("https://www.google.co.in/");
-	  
+	  	  
   }
   @AfterTest
   public void afterTest() 
