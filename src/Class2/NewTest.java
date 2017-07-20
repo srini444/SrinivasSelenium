@@ -23,10 +23,6 @@ public class NewTest {
 	  Select dw = new Select(driver.findElement(By.xpath(".//*[@id='buy_proertyTypeDefault']")));
 	  dw.selectByVisibleText("Flat");
 	  
-	  
-	  
-	  
-	  
   }
   @AfterTest
   public void afterTest() 

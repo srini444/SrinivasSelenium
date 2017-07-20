@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MyTestSuite">
-              <span class="suite-name border-passed">MyTestSuite</span>
+              <span class="suite-name border-failed">MyTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-MyTestSuite">
-                    <span>C:\Users\Srinivas\git\SrinivasSelenium\src\Class3\testsuite.xml</span>
+                    <span>C:\Users\Srinivas\git\SrinivasSelenium\src\Class3\NewFile.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-MyTestSuite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods failed suite-MyTestSuite"> (hide)</a> <!-- hide-methods failed suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods failed suite-MyTestSuite"> (show)</a> <!-- show-methods failed suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MyTestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyTestSuite" title="Class2.NewTest" hash-for-method="f">f</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,12 @@
                     <div class="method-list-content passed suite-MyTestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MyTestSuite" title="Class3.TestSuiteTest1" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MyTestSuite" title="Class2.Hellosaarthitechnologies" hash-for-method="f">f</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MyTestSuite" title="Class3.TestSuiteTest2" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MyTestSuite" title="Class3.TestSuiteTest1" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyTestSuite -->
@@ -122,6 +136,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyTestSuite" class="panel MyTestSuite">
+          <div class="suite-MyTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Class2.NewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;DESKTOP-CV2VGNE&apos;, ip: &apos;10.5.50.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
+	at Class2.NewTest.f(NewTest.java:23)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-failed -->
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -140,14 +177,14 @@
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Class3.TestSuiteTest2</span>
+              <span class="class-name">Class2.Hellosaarthitechnologies</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -155,7 +192,7 @@
         </div> <!-- panel MyTestSuite -->
         <div panel-name="test-xml-MyTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Srinivas\git\SrinivasSelenium\src\Class3\testsuite.xml</span>
+            <span class="header-content">C:\Users\Srinivas\git\SrinivasSelenium\src\Class3\NewFile.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,11 +204,16 @@
       &lt;class name=&quot;Class3.TestSuiteTest1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestSuiteTest1 --&gt;
-  &lt;test name=&quot;TestSuiteTest2&quot;&gt;
+  &lt;test name=&quot;NewTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Class3.TestSuiteTest2&quot;/&gt;
+      &lt;class name=&quot;Class2.NewTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestSuiteTest2 --&gt;
+  &lt;/test&gt; &lt;!-- NewTest --&gt;
+  &lt;test name=&quot;Hellosaarthitechnologies&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Class2.Hellosaarthitechnologies&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Hellosaarthitechnologies --&gt;
 &lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,7 +228,10 @@
                 <span class="test-name">TestSuiteTest1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">TestSuiteTest2 (1 class)</span>
+                <span class="test-name">NewTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Hellosaarthitechnologies (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +257,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'Class3.TestSuiteTest1')
-data.setCell(0, 3, 1455);
+data.setCell(0, 1, 'f')
+data.setCell(0, 2, 'Class2.NewTest')
+data.setCell(0, 3, 6365);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test')
-data.setCell(1, 2, 'Class3.TestSuiteTest2')
-data.setCell(1, 3, 1342);
+data.setCell(1, 1, 'f')
+data.setCell(1, 2, 'Class2.Hellosaarthitechnologies')
+data.setCell(1, 3, 3935);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'Class3.TestSuiteTest1')
+data.setCell(2, 3, 1474);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -258,26 +307,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">4812 ms</span>
+                <span class="method-start">4832 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6271 ms</span>
+                <span class="method-start">6309 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Class3.TestSuiteTest2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Class2.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6339 ms</span>
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">6393 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">test</span>
-                <span class="method-start">12220 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f</span>
+                <span class="method-start">11159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13563 ms</span>
+                <span class="method-name">afterTest</span>
+                <span class="method-start">17524 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Class2.Hellosaarthitechnologies</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">17547 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">f</span>
+                <span class="method-start">22347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">26287 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

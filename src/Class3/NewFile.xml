@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MyTestSuite">
+
+  <test name="TestSuiteTest1">
+    <classes>
+       <class name="Class3.TestSuiteTest1"></class>
+    </classes>
+  </test>
+  
+  <test name="NewTest">
+    <classes>
+       <class name="Class2.NewTest"></class>
+    </classes>
+  </test>
+
+  <test name="Hellosaarthitechnologies">
+    <classes>
+       <class name="Class2.Hellosaarthitechnologies"></class>
+    </classes>
+  </test>
+  
+ </suite>
