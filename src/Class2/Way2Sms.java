@@ -20,24 +20,27 @@ public class Way2Sms {
   {
 	  driver.get("http://site21.way2sms.com/entry?ec=0080&id=0.22633332955517949");
 	  Thread.sleep(3000);
-	  driver.findElement(By.name("username")).sendKeys("xxx");
+	  driver.findElement(By.name("username")).sendKeys("9871536225");
 	  Thread.sleep(3000);
-	  driver.findElement(By.name("password")).sendKeys("xxx");
+	  driver.findElement(By.name("password")).sendKeys("9491");
 	  Thread.sleep(3000);
 	  driver.findElement(By.id("loginBTN")).click();
 	  Thread.sleep(3000);
 	  driver.findElement(By.xpath(".//*[@id='sendSMS']/a")).click();
 	  Thread.sleep(3000);
 	  driver.switchTo().frame("frame");
-	  driver.findElement(By.xpath(".//*[@id='mobile']")).sendKeys("XXXXX");
+	  driver.findElement(By.xpath(".//*[@id='mobile']")).sendKeys("9014626620");
 	  Thread.sleep(3000);
-	  driver.findElement(By.xpath(".//*[@id='sndSMSSection']/div/div[2]/div[1]/div[2]")).click();
+	  //driver.findElement(By.xpath(".//*[@id='sndSMSSection']/div/div[2]/div[1]/div[2]")).click();
 	  Thread.sleep(3000);
-	  Select dw = new Select(driver.findElement(By.id("showingCat")));
-	  dw.selectByVisibleText("Independence Day");
+	  driver.findElement(By.xpath(".//*[@id='sndSMSSection']/div/div[2]/div[1]/div[1]/p")).click();
 	  Thread.sleep(3000);
-	  driver.findElement(By.xpath(".//*[@id='smsGreetsPaging']/ol/li[6]")).click();
+	  driver.findElement(By.xpath("//input[@value='Good Night']")).click();
+	  Thread.sleep(3000);
+	 
 	  
+	  //Select dw = new Select(driver.findElement(By.xpath(".//*[@id='sndSMSSection']/div/div[2]/div[1]/div[1]/p")));
+	  //dw.selectByVisibleText("Independence Day");
 	  // update soon
   }
   @AfterTest

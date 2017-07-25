@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Class3.LaunchChromeBrowser">
+      <class name="Class4.Log4j">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="f"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- Class3.LaunchChromeBrowser -->
+      </class> <!-- Class4.Log4j -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

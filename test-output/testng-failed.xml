@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [MyTestSuite]">
-  <test name="NewTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Class2.NewTest">
+      <class name="Class4.Log4j">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="f"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- Class2.NewTest -->
+      </class> <!-- Class4.Log4j -->
     </classes>
-  </test> <!-- NewTest(failed) -->
-</suite> <!-- Failed suite [MyTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

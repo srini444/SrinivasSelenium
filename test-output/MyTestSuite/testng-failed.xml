@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [MyTestSuite]">
+  <test name="TestSuiteTest1(failed)">
+    <classes>
+      <class name="Class3.TestSuiteTest1">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- Class3.TestSuiteTest1 -->
+    </classes>
+  </test> <!-- TestSuiteTest1(failed) -->
   <test name="NewTest(failed)">
     <classes>
       <class name="Class2.NewTest">
@@ -12,4 +23,15 @@
       </class> <!-- Class2.NewTest -->
     </classes>
   </test> <!-- NewTest(failed) -->
+  <test name="Hellosaarthitechnologies(failed)">
+    <classes>
+      <class name="Class2.Hellosaarthitechnologies">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Class2.Hellosaarthitechnologies -->
+    </classes>
+  </test> <!-- Hellosaarthitechnologies(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 20 18:33:22 IST 2017</td>
+<td>Started on:</td><td>Fri Jul 21 12:26:07 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11131 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9342 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,39 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Class2.NewTest.f()'><b>f</b><br>Test class: Class2.NewTest</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;DESKTOP-CV2VGNE&apos;, ip: &apos;10.5.50.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
-	at Class2.NewTest.f(NewTest.java:23)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace138776324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace138776324'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Srinivas\AppData\Local\Temp\rust_mozprofile.IoNvXcnDjFel, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0, platformVersion=10.0, moz:processID=3680.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 9f059dd7-e6aa-43de-95a7-50fcfe3ab418
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at Class2.NewTest.f(NewTest.java:21)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261031890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261031890'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;DESKTOP-CV2VGNE&apos;, ip: &apos;10.5.50.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
-	at Class2.NewTest.f(NewTest.java:23)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Srinivas\AppData\Local\Temp\rust_mozprofile.IoNvXcnDjFel, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0, platformVersion=10.0, moz:processID=3680.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 9f059dd7-e6aa-43de-95a7-50fcfe3ab418
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:364)
+	at Class2.NewTest.f(NewTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -115,7 +135,7 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>6</td>
+<td>4</td>
 <td>Class2.NewTest@1753acfe</td></tr>
 </table><p>
 </body>
